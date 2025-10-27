@@ -4,7 +4,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: ./backend/Dockerfile
+      dockerfile: ./Dockerfile
     image: adeelhussain12/bistro-flow:latest
     ports:
       - "5000:5000"
