@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Prime Ribeye Steak",
+    "description": "Premium aged ribeye steak grilled to perfection, topped with garlic herb butter and served with roasted baby potatoes.",
+    "price": "£38.00",
+    "image": "/images/ribeye.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Lobster",
+    "description": "Atlantic lobster roasted in a creamy brandy and mushroom sauce, topped with gratinéed cheese.",
+    "price": "£38.00",
+    "image": "/images/lobster.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Tagliatelle",
+    "description": "Fresh handmade pasta tossed in truffle cream and shaved parmesan.",
+    "price": "£26.00",
+    "image": "/images/tagliatlle.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Seared Chilean Sea Bass",
+    "description": "Pan-seared sea bass with lemon beurre blanc and roasted vegetables.",
+    "price": "£34.00",
+    "image": "/images/seabass.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Duck à l’Orange",
+    "description": "Crispy duck breast with a caramelized orange glaze, served with confit potatoes.",
+    "price": "£30.00",
+    "image": "/images/duck.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Dark Chocolate Soufflé",
+    "description": "Warm, fluffy soufflé with molten center and vanilla bean ice cream.",
+    "price": "£13.00",
+    "image": "/images/souffle.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Burrata & Heirloom Tomatoes",
+    "description": "Creamy burrata with heirloom tomatoes, basil oil, and a drizzle of aged balsamic.",
+    "price": "£12.00",
+    "image": "/images/heirloom.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Seared Scallops",
+    "description": "Pan-seared scallops served with pea purée and crispy pancetta.",
+    "price": "£14.00",
+    "image": "/images/scallops.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Truffle Parmesan Fries",
+    "description": "Crispy golden fries tossed in truffle oil and topped with grated parmesan.",
+    "price": "£6.00",
+    "image": "/images/truffle-fries.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Grilled Asparagus with Hollandaise",
+    "description": "Fresh asparagus spears grilled and served with a silky hollandaise sauce.",
+    "price": "£6.50",
+    "image": "/images/asparagus.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Classic Tiramisu",
+    "description": "Espresso-soaked ladyfingers layered with mascarpone cream and dusted with cocoa.",
+    "price": "£10.00",
+    "image": "/images/tiramisu.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Crème Brûlée",
+    "description": "Vanilla bean custard topped with a caramelized sugar crust.",
+    "price": "£9.50",
+    "image": "/images/creme-brulee.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Espresso Martini",
+    "description": "A luxurious blend of vodka, coffee liqueur, and espresso — smooth and bold.",
+    "price": "£12.00",
+    "image": "/images/espresso-martini.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Elderflower Spritz",
+    "description": "A light and floral mix of elderflower liqueur, prosecco, and soda over ice.",
+    "price": "£10.00",
+    "image": "/images/elderflower-spritz.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Passion Fruit Mocktail",
+    "description": "Refreshing blend of passion fruit, lime juice, and sparkling soda.",
+    "price": "£7.00",
+    "image": "/images/passionfruit-fizz.jpg"
+  }
+]

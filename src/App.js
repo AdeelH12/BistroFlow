@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import AboutSection from './components/AboutSection';
+import FeaturedDishes from './components/FeaturedDishes';
+import Footer from './components/Footer';
+import HeroSection from './components/HeroSection';
+import Navbar from './components/Navbar';
+import BookingPage from "./pages/BookingPage";
+import { Routes, Route } from 'react-router-dom';
+import ContactPage from './pages/ContactPage';
+import MenuPage from './pages/MenuPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <HeroSection />
+              <AboutSection />
+              <FeaturedDishes />
+              <br></br>
+              <ContactPage />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/book" element={<BookingPage />} />
+        <Route path="/api/menu" element={<MenuPage/>} />
+      </Routes>
+    </>
   );
+
 }
 
 export default App;
