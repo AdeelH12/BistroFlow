@@ -1,10 +1,12 @@
-on: 
+name: CI/CD - Build and Push BistroFlow
+
+on:
   push:
     branches:
       - 'main'
 
-jobs: 
-  build_and_deploy:
+jobs:
+  build_and_push:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,7 +17,7 @@ jobs:
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
       - name: Build Docker image
-        run: docker compose build
+        run: docker build -t adeelhussain12/bistro-flow:latest -f ./backend/Dockerfile .
 
       - name: Push Docker image
-        run: docker compose push
+        run: docker push adeelhussain12/bistro-flow:latest
