@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    image: adeelhussain12/bistro-flow:latest
+    ports:
+      - "5000:5000"
