@@ -10,7 +10,8 @@ RUN npm run build
 # Backend 
 FROM node:18
 WORKDIR /app
-COPY . . 
+COPY backend ./backend
+COPY --from=build /app/build ./build
 RUN npm install
 EXPOSE 5000
 CMD [ "node" , "backend/server.js" ]
