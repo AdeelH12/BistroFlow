@@ -13,9 +13,9 @@ function Navbar() {
           <Link to="/">Bistro<span className="text-white">Flow</span></Link>
         </div>
 
-      
+
         <ul className="hidden md:flex space-x-10 text-lg font-light">
-          <Link to="/api/menu"><li className="hover:text-[#D4AF37] transition duration-300 cursor-pointer">Menu</li></Link>
+          <Link to="/menu"><li className="hover:text-[#D4AF37] transition duration-300 cursor-pointer">Menu</li></Link>
           <Link to="/book"><li className="hover:text-[#D4AF37] transition duration-300 cursor-pointer">Book a Table</li></Link>
           <a href="#contact"><li className="hover:text-[#D4AF37] transition duration-300 cursor-pointer">Contact</li></a>
         </ul>
@@ -32,10 +32,9 @@ function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-black/95 text-center py-6 space-y-6 text-lg font-light animate-slideDown">
           <Link to="/" className="block hover:text-[#D4AF37]">Home</Link>
-          <Link to="/api/menu" className="block hover:text-[#D4AF37]">Menu</Link>
+          <Link to="/menu" className="block hover:text-[#D4AF37]">Menu</Link>
           <Link to="/book" className="block hover:text-[#D4AF37]">Book A Table</Link>
           <Link to="/section?=contact">Contact</Link>
-           <a href="#contact"><li className="hover:text-[#D4AF37] transition duration-300 cursor-pointer">Contact</li></a>
         </div>
       )}
     </nav>
