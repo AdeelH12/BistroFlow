@@ -47,57 +47,6 @@ Customers can browse an elegant menu, book tables online, and send contact messa
 
 ---
 
-## 📂 Project Structure
-
-\`\`\`
-BistroFlow/
-├── .github/
-│ └── workflows/
-│ └── docker.yml
-│
-├── backend/
-│ ├── data/
-│ │ ├── bookings.json
-│ │ ├── menu.json
-│ │ └── contacts.json
-│ └── server.js
-│
-├── public/
-│ ├── images/
-│ ├── index.html
-│ ├── logo.png
-│ └── manifest.json
-│
-├── src/
-│ ├── components/
-│ │ ├── AboutSection.js
-│ │ ├── FeaturedDishes.js
-│ │ ├── Footer.js
-│ │ ├── HeroSection.js
-│ │ └── Navbar.js
-│ ├── pages/
-│ │ ├── BookingPage.js
-│ │ ├── ContactPage.js
-│ │ ├── HomePage.js
-│ │ └── MenuPage.js
-│ ├── App.css
-│ ├── App.js
-│ ├── App.test.js
-│ ├── index.css
-│ ├── index.js
-│ ├── logo.svg
-│ ├── reportWebVitals.js
-│ └── setupTests.js
-│
-├── docker-compose.yml
-├── Dockerfile
-├── package-lock.json
-├── package.json
-└── README.md
-\`\`\`
-
----
-
 ## 🧩 API Endpoints
 
 | Method | Endpoint | Description |
@@ -178,7 +127,7 @@ jobs:
 
 **Adeel Hussain**  
 Front - End Developer | React | Node.js | Docker | CI/CD  
-[LinkedIn]([#](https://www.linkedin.com/in/adeel-hussain-47601786/)) • [GitHub](#)
+[LinkedIn](https://www.linkedin.com/in/adeel-hussain-47601786/) • [GitHub](https://github.com/AdeelH12)
 
 ---
 
