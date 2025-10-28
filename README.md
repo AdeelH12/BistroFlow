@@ -59,13 +59,11 @@ Customers can browse an elegant menu, book tables online, and send contact messa
 
 ## 🐳 Docker Setup
 
-\`\`\`bash
 # Build and run the app
 docker compose up --build
 
 # The app runs at:
 # Frontend + Backend: http://localhost:5000
-\`\`\`
 
 ---
 
