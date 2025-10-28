@@ -87,7 +87,11 @@ docker compose up --build
 
 ## Homepage
 ![Homepage Screenshot](screenshots/home.png)
+
+## Menu Page
 ![Menu Page Screenshot](screenshots/menu.png)
+
+## Booking Page
 ![Booking Screenshot](screenshots/booking.png)
 
 ---
