@@ -8,7 +8,7 @@ function MenuPage() {
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/api/menu")
+        fetch("/api/menu")
             .then(response => response.json())
             .then(data => {
                 console.log("Fetched Data: ", data);

@@ -5,7 +5,7 @@ function FeaturedDishes() {
 
   //side effect to get dishes from server.js
 useEffect(() => {
-  fetch("http://localhost:5000/api/menu")
+  fetch("/api/menu")
     .then(res => res.json())
     .then(data => setDishes(data.slice(0, 6)))
     .catch(err => console.error("Error fetching menu:", err));

@@ -31,10 +31,13 @@ function Navbar() {
 
       {isOpen && (
         <div className="md:hidden bg-black/95 text-center py-6 space-y-6 text-lg font-light animate-slideDown">
-          <a className="block hover:text-[#D4AF37]" href="#">Home</a>
-          <a className="block hover:text-[#D4AF37]" href="#">Menu</a>
+          <Link to="/" className="block hover:text-[#D4AF37]">Home</Link>
+          <Link to="/api/menu" className="block hover:text-[#D4AF37]">Menu</Link>
+          <Link to="/book" className="block hover:text-[#D4AF37]">Book A Table</Link>
+           <a href="#contact"><li className="hover:text-[#D4AF37] transition duration-300 cursor-pointer">Contact</li></a>
+          {/* <a className="block hover:text-[#D4AF37]" href="#">Menu</a>
           <a className="block hover:text-[#D4AF37]" href="#">Book a Table</a>
-          <a className="block hover:text-[#D4AF37]" href="#">Contact</a>
+          <a className="block hover:text-[#D4AF37]" href="#">Contact</a> */}
         </div>
       )}
     </nav>
