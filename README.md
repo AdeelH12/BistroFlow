@@ -75,28 +75,6 @@ docker compose up --build
 2️⃣ GitHub Actions builds and pushes the Docker image to Docker Hub  
 3️⃣ Render automatically detects the new image and redeploys the app  
 
-**Workflow summary (GitHub Actions):**
-
-\`\`\`yaml
-name: CI/CD - Build and Push Full Stack App
-on:
-  push:
-    branches: [ main ]
-
-jobs:
-  build_and_deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Log in to Docker Hub
-        run: echo "\${{ secrets.DOCKER_PASSWORD }}" | docker login -u "\${{ secrets.DOCKER_USERNAME }}" --password-stdin
-      - name: Build Docker images
-        run: docker compose build
-      - name: Push Docker images
-        run: docker compose push
-\`\`\`
-
 ---
 
 ## 🌍 Live Demo
