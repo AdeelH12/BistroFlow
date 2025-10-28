@@ -1,70 +1,190 @@
-# Getting Started with Create React App
+# 🍷 BistroFlow
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, luxury-themed full-stack restaurant web app built with **React**, **Node.js**, and **Express** — fully containerized with **Docker** and automated through a **CI/CD pipeline** using **GitHub Actions → Docker Hub → Render**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Overview
 
-### `npm start`
+BistroFlow delivers a premium dining website experience with a rich front-end interface and dynamic backend API.  
+Customers can browse an elegant menu, book tables online, and send contact messages — all powered by live backend data.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧠 What I Learned
 
-### `npm test`
+- Building a **full-stack web app** (React + Node.js + Express)
+- Using **Docker** to containerize frontend & backend together
+- Creating a **CI/CD pipeline** with **GitHub Actions**
+- Hosting on **Render** with automatic deployments from Docker Hub
+- Reading & writing **JSON data files** on the backend
+- Connecting routes between frontend pages and backend APIs
+- Debugging deployment issues (build errors, routing conflicts, missing files)
+- Managing environment consistency between local dev and production
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Layer | Technologies |
+|:------|:--------------|
+| **Frontend** | React.js, Tailwind CSS, JavaScript |
+| **Backend** | Node.js, Express.js, File System (fs) |
+| **Database** | JSON files (menu, bookings, contacts) |
+| **DevOps** | Docker, Docker Compose, GitHub Actions, Render |
+| **Version Control** | Git, GitHub |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Features
 
-### `npm run eject`
+- 🏠 **Home Page:** Hero banner, about section, featured dishes  
+- 🍽️ **Menu Page:** Fetches menu data dynamically from backend API  
+- 📅 **Booking Page:** Submits reservations to backend and stores data in JSON  
+- 💬 **Contact Section:** Contact form that sends messages to backend  
+- 🌐 **Fully Responsive:** Built with Tailwind for all devices  
+- 🔁 **Automated Deployments:** CI/CD from GitHub → Docker Hub → Render  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📂 Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+\`\`\`
+BistroFlow/
+├── .github/
+│ └── workflows/
+│ └── docker.yml
+│
+├── backend/
+│ ├── data/
+│ │ ├── bookings.json
+│ │ ├── menu.json
+│ │ └── contacts.json
+│ └── server.js
+│
+├── public/
+│ ├── images/
+│ ├── index.html
+│ ├── logo.png
+│ └── manifest.json
+│
+├── src/
+│ ├── components/
+│ │ ├── AboutSection.js
+│ │ ├── FeaturedDishes.js
+│ │ ├── Footer.js
+│ │ ├── HeroSection.js
+│ │ └── Navbar.js
+│ ├── pages/
+│ │ ├── BookingPage.js
+│ │ ├── ContactPage.js
+│ │ ├── HomePage.js
+│ │ └── MenuPage.js
+│ ├── App.css
+│ ├── App.js
+│ ├── App.test.js
+│ ├── index.css
+│ ├── index.js
+│ ├── logo.svg
+│ ├── reportWebVitals.js
+│ └── setupTests.js
+│
+├── docker-compose.yml
+├── Dockerfile
+├── package-lock.json
+├── package.json
+└── README.md
+\`\`\`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🧩 API Endpoints
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Method | Endpoint | Description |
+|:-------|:----------|:-------------|
+| \`GET\` | \`/api/menu\` | Fetch restaurant menu data |
+| \`POST\` | \`/api/bookings\` | Save a table reservation |
+| \`POST\` | \`/api/contact\` | Save a contact form submission |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🐳 Docker Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+\`\`\`bash
+# Build and run the app
+docker compose up --build
 
-### Analyzing the Bundle Size
+# The app runs at:
+# Frontend + Backend: http://localhost:5000
+\`\`\`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🚀 CI/CD Pipeline
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1️⃣ Push code to the main branch on GitHub  
+2️⃣ GitHub Actions builds and pushes the Docker image to Docker Hub  
+3️⃣ Render automatically detects the new image and redeploys the app  
 
-### Advanced Configuration
+**Workflow summary (GitHub Actions):**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+\`\`\`yaml
+name: CI/CD - Build and Push Full Stack App
+on:
+  push:
+    branches: [ main ]
 
-### Deployment
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Log in to Docker Hub
+        run: echo "\${{ secrets.DOCKER_PASSWORD }}" | docker login -u "\${{ secrets.DOCKER_USERNAME }}" --password-stdin
+      - name: Build Docker images
+        run: docker compose build
+      - name: Push Docker images
+        run: docker compose push
+\`\`\`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🌍 Live Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🔗 **Live App:** [https://bistroflow.onrender.com](https://bistroflow.onrender.com)
+
+---
+
+## 📸 Screenshots
+
+## Homepage
+![Homepage Screenshot](screenshots/home.png)
+![Menu Page Screenshot](screenshots/menu.png)
+![Booking Screenshot](screenshots/booking.png)
+
+---
+
+## 🧭 Future Improvements
+
+- Integrate a database (MongoDB / PostgreSQL)
+- Add admin panel for managing menu & bookings
+- Improve validation & error handling on forms
+- Add user authentication for reservations
+
+---
+
+## 👨‍💻 Author
+
+**Adeel Hussain**  
+Front - End Developer | React | Node.js | Docker | CI/CD  
+[LinkedIn]([#](https://www.linkedin.com/in/adeel-hussain-47601786/)) • [GitHub](#)
+
+---
+
+## 🏁 License
+
+MIT License © 2025 Adeel Hussain
+EOF
+
+echo "✅ README.md has been created successfully!"
