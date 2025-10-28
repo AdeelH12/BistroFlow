@@ -110,10 +110,3 @@ Front - End Developer | React | Node.js | Docker | CI/CD
 [LinkedIn](https://www.linkedin.com/in/adeel-hussain-47601786/) • [GitHub](https://github.com/AdeelH12)
 
 ---
-
-## 🏁 License
-
-MIT License © 2025 Adeel Hussain
-EOF
-
-echo "✅ README.md has been created successfully!"
